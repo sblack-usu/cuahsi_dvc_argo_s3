@@ -34,4 +34,10 @@ clean-build: ## clean build artifacts
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
+.PHONY add-remote-nwm1
+add-remote-nwm1:
+	@echo "Adds the cuahsi hosted nwm1 dataset to dvc remotes"
+	@dvc remote add -f -d nwm1 s3://subsetter-static-input/nwm.v1.2.4.gz
+	@dvc remote modify nwm1 endpointurl https://api/minio.cuahsi.io
+
 .DEFAULT_GOAL := help

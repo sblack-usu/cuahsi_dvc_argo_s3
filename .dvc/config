@@ -1,0 +1,5 @@
+[core]
+    remote = nwm1
+['remote "nwm1"']
+    url = s3://subsetter-static-input/nwm.v1.2.4.gz
+    endpointurl = https://api/minio.cuahsi.io
