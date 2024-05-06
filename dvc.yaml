@@ -1,0 +1,9 @@
+stages:
+  hello_world:
+    cmd: python cuahsi_ciroh_argo_s3_pipeline/hello_world.py
+    deps:
+    - cuahsi_ciroh_argo_s3_pipeline/hello_world.py
+    params:
+    - hello_world.message
+    outs:
+    - output.txt

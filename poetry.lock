@@ -207,6 +207,21 @@ files = [
 ]
 
 [[package]]
+name = "argo-workflows"
+version = "6.4.8"
+description = "Argo Workflows API"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "argo-workflows-6.4.8.tar.gz", hash = "sha256:bd0fe3ebd3a839196ab267eb8f69ba5fc59bfffbb57ae803506b0f2de3559f4f"},
+    {file = "argo_workflows-6.4.8-py3-none-any.whl", hash = "sha256:c6e7b8c26bd16719c34ae7f65fcc769f73c377427498f3daf8c4a0d58409ecc5"},
+]
+
+[package.dependencies]
+python-dateutil = "*"
+urllib3 = ">=1.25.3"
+
+[[package]]
 name = "async-timeout"
 version = "4.0.3"
 description = "Timeout context manager for asyncio programs"
@@ -3038,4 +3053,4 @@ test = ["zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<4.0"
-content-hash = "2c8b08aeb2116596ee262eede060007fd7a91cb0f02c5e94d30265c37ed74af0"
+content-hash = "5877e4f7e023cfaee9505e5901189e95c6b1e9b57b998d367a5d04799cd7b2b9"
