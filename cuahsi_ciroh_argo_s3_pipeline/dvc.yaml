@@ -1,0 +1,10 @@
+stages:
+  argo:
+    cmd: python hello_world.py
+    deps:
+    - hello_world.py
+    params:
+    - argo.host
+    - argo.bearer_token
+    - argo.namespace
+    - argo.hucs
